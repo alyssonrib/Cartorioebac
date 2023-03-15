@@ -145,7 +145,8 @@ int main ()
 		printf("escolha a opção desejada do menu:\n\n"); // o \n é para quebra de linha
 		printf("\t1 - Registrar nomes\n"); // o \t é para espaçamento
 		printf("\t2 - Consultar nomes\n");
-		printf("\t3 - Deletar nomes\n\n");
+		printf("\t3 - Deletar nomes\n");
+		printf("\t4 - Sair do sistema\n\n");
 		printf("Opção: ");
 	
 		scanf("%d", &opcao); //scanf para scanear o valor que o usuario digita, e o %d serve para armazenar um valor do tipo inteiro, o que o usuario digitar
@@ -164,6 +165,11 @@ int main ()
 			
 			case 3:
 			deletar();
+			break;
+			
+			case 4:
+			printf("\n Até a proxima! \n");
+			return 0;
 			break;
 			
 			default:
